@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('datenais');
             $table->string('lieunais');
             $table->string('telephone');
-            $table->uuid('uid')->unique();
+           // $table->uuid('uid')->unique();
             $table->string('role')->default('invite');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
